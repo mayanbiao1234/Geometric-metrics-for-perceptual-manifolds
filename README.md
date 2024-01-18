@@ -80,7 +80,8 @@ print(data.shape)
 curvatures, _ = estimate_manifold_curvature(data, k=20)
 print(curvatures)
 ```
-
+## Volume metrics for perceptual manifolds in deep neural networks
+The volume of the perceptual manifold measures the richness of the distribution.
 ```
 import numpy as np
 
