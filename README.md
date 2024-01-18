@@ -3,7 +3,7 @@ Geometric metrics for perceptual manifolds in deep neural networks
 
 ## Curvature metrics for perceptual manifolds in deep neural networks
 The curvature metric of the perceptual manifold in deep neural networks allows analyzing the fairness of the model from a geometric point of view.
-(https://arxiv.org/abs/2303.12307)
+For related conclusions on the curvature and model preferences of perceptual manifolds please refer to the paper, [Curvature-Balanced Feature Manifold Learning for Long-Tailed Classification].(https://arxiv.org/abs/2303.12307)
 ```python
 # -*- coding: utf-8 -*-
 """
