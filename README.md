@@ -80,3 +80,37 @@ print(data.shape)
 curvatures, _ = estimate_manifold_curvature(data, k=20)
 print(curvatures)
 ```
+
+```
+import numpy as np
+
+def calculate_volume(Z, d, Z_mean):
+    # Calculate (Z - Z_mean)
+    diff = Z - Z_mean
+
+    # Calculate (Z - Z_mean)(Z - Z_mean)^T
+    outer_product = np.outer(diff, diff)
+
+    # Calculate \frac{d}{m}(Z - Z_mean)(Z - Z_mean)^T
+    scaled_outer_product = (d / Z.shape[0]) * outer_product
+
+    # Calculate I + \frac{d}{m}(Z - Z_mean)(Z - Z_mean)^T
+    matrix_sum = np.eye(Z.shape[1]) + scaled_outer_product
+
+    # Calculate \frac{1}{2} \log_2(I + \frac{d}{m}(Z - Z_mean)(Z - Z_mean)^T)
+    volume = 0.5 * np.log2(np.linalg.det(matrix_sum))
+
+    return volume
+
+# Example usage
+# Assume Z is a matrix of size 5000x10
+Z = np.random.rand(5000, 10)
+# Assume d is a hyperparameter
+d = 1.0
+# Calculate the mean Z_mean of Z
+Z_mean = np.mean(Z, axis=0)
+
+# Calculate the volume of the perceptual manifold
+volume = calculate_volume(Z, d, Z_mean)
+print("Perceptual manifold volume:", volume)
+```
