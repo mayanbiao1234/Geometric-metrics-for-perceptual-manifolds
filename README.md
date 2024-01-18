@@ -1,8 +1,7 @@
 # Geometric-metrics-for-perceptual-manifolds-in-deep-neural-networks
 Natural datasets exhibit inherent patterns that can be generalized under the manifold distribution principle: the distribution of a class of data is close to a low-dimensional perceptual manifold. As illustrated, data classification can be viewed as the unraveling and separation of perceptual manifolds. The difficulty of classifying a manifold increases when it is entangled with other perceptible manifolds. Typically, a deep neural network consists of a feature extractor and a classifier. Feature learning can be considered as unfolding perceptual manifolds, where a well-learned feature extractor can often unfold multiple manifolds for the classifier to decode. From this perspective, all factors related to manifold complexity may impact the classification performance of the model. We will provide metrics for the curvature, volume, and separability of perceptual manifolds.
 
-![image](https://github.com/mayanbiao1234/Geometric-metrics-for-perceptual-manifolds-in-deep-neural-networks/assets/31196857/fbf56a05-b177-409b-bca7-94218f338472)
-
+![fig24](https://github.com/mayanbiao1234/Geometric-metrics-for-perceptual-manifolds-in-deep-neural-networks/assets/31196857/5b5d4ee3-cab2-4078-a7eb-09d52648121b)
 
 ## Curvature metrics for perceptual manifolds in deep neural networks
 The curvature metric of the perceptual manifold in deep neural networks allows analyzing the fairness of the model from a geometric point of view.
