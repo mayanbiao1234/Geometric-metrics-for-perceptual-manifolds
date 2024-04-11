@@ -98,7 +98,9 @@ print(data.shape)
 curvatures, _ = estimate_manifold_curvature(data, k=20)
 print(curvatures)
 ```
-[fig2_1.pdf](https://github.com/mayanbiao1234/Geometric-metrics-for-perceptual-manifolds/files/14945910/fig2_1.pdf)
+
+![图片1](https://github.com/mayanbiao1234/Geometric-metrics-for-perceptual-manifolds/assets/31196857/d5f4a764-1ac6-4e30-bf21-294319bcc7c5)
+
 
 ## Volume metrics for perceptual manifolds in deep neural networks
 The volume of the perceptual manifold measures the richness of the distribution. See the paper, [Delving into Semantic Scale Imbalance](https://openreview.net/pdf?id=07tc5kKRIo), for how to use multiscale volumetric metrics for perceptual manifolds, and for more conclusions.
