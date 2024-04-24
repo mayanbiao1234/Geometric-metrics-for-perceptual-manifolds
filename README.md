@@ -159,24 +159,17 @@ print("Perceptual manifold volume:", volume)
 
 
 ## Intrinsic Dimensions for perceptual manifolds in deep neural networks
-The volume of the perceptual manifold measures the richness of the distribution. See the paper, [Delving into Semantic Scale Imbalance](https://openreview.net/pdf?id=07tc5kKRIo), for how to use multiscale volumetric metrics for perceptual manifolds, and for more conclusions.
+See the paper, [Unveiling and Mitigating Generalized Biases of DNNs through the Intrinsic Dimensions of Perceptual Manifolds](https://arxiv.org/abs/2404.13859)
 
 The citation format is: 
 
-@inproceedings{
-
-ma2023delving,
-
-title={Delving into Semantic Scale Imbalance},
-
-author={Yanbiao Ma and Licheng Jiao and Fang Liu and Yuxin Li and Shuyuan Yang and Xu Liu},
-
-booktitle={The Eleventh International Conference on Learning Representations },
-
-year={2023},
-
-url={https://openreview.net/forum?id=07tc5kKRIo}
-
+@misc{ma2024unveiling,
+      title={Unveiling and Mitigating Generalized Biases of DNNs through the Intrinsic Dimensions of Perceptual Manifolds}, 
+      author={Yanbiao Ma and Licheng Jiao and Fang Liu and Lingling Li and Wenping Ma and Shuyuan Yang and Xu Liu and Puhua Chen},
+      year={2024},
+      eprint={2404.13859},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 
 ```
