@@ -156,3 +156,33 @@ Z_mean = np.mean(Z, axis=0)
 volume = calculate_volume(Z, d, Z_mean)
 print("Perceptual manifold volume:", volume)
 ```
+
+
+## Intrinsic Dimensions for perceptual manifolds in deep neural networks
+The volume of the perceptual manifold measures the richness of the distribution. See the paper, [Delving into Semantic Scale Imbalance](https://openreview.net/pdf?id=07tc5kKRIo), for how to use multiscale volumetric metrics for perceptual manifolds, and for more conclusions.
+
+The citation format is: 
+
+@inproceedings{
+
+ma2023delving,
+
+title={Delving into Semantic Scale Imbalance},
+
+author={Yanbiao Ma and Licheng Jiao and Fang Liu and Yuxin Li and Shuyuan Yang and Xu Liu},
+
+booktitle={The Eleventh International Conference on Learning Representations },
+
+year={2023},
+
+url={https://openreview.net/forum?id=07tc5kKRIo}
+
+}
+
+```
+from skdim.id import TLE
+dim_estimator = TLE()
+intrinsic_dim = dim_estimator.fit(augmented_data).dimension_
+print("Intrinsic Dimensions:", intrinsic_dim)
+```
+
