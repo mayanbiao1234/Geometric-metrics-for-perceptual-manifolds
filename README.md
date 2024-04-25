@@ -8,19 +8,16 @@ The curvature metric of the perceptual manifold in deep neural networks allows a
 For related conclusions on the curvature and model preferences of perceptual manifolds please refer to the paper, [Curvature-Balanced Feature Manifold Learning for Long-Tailed Classification](https://arxiv.org/abs/2303.12307)
 The citation format is: 
 
+```
 @inproceedings{ma2023curvature,
-
   title={Curvature-Balanced Feature Manifold Learning for Long-Tailed Classification},
-  
   author={Ma, Yanbiao and Jiao, Licheng and Liu, Fang and Yang, Shuyuan and Liu, Xu and Li, Lingling},
-  
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  
   pages={15824--15835},
-  
   year={2023}
-  
 }
+```
+
 
 ```python
 # -*- coding: utf-8 -*-
@@ -107,21 +104,17 @@ The volume of the perceptual manifold measures the richness of the distribution.
 
 The citation format is: 
 
+```
 @inproceedings{
-
 ma2023delving,
-
 title={Delving into Semantic Scale Imbalance},
-
 author={Yanbiao Ma and Licheng Jiao and Fang Liu and Yuxin Li and Shuyuan Yang and Xu Liu},
-
 booktitle={The Eleventh International Conference on Learning Representations },
-
 year={2023},
-
 url={https://openreview.net/forum?id=07tc5kKRIo}
-
 }
+```
+
 
 ```
 import numpy as np
@@ -175,15 +168,6 @@ The citation format is:
       primaryClass={cs.CV}
 }
 ```
-
-## References
-
-[@ma2024unveiling]: Ma, Y., Jiao, L., Liu, F., Li, L., Ma, W., Yang, S., Liu, X., & Chen, P. (2024). Unveiling and Mitigating Generalized Biases of DNNs through the Intrinsic Dimensions of Perceptual Manifolds. *arXiv preprint* arXiv:2404.13859.
-
-## Usage
-
-According to Ma et al. ([@ma2024unveiling]), ...
-
 
 
 ```
