@@ -174,6 +174,19 @@ The citation format is:
       primaryClass={cs.CV}
 }
 
+[//]: # (References)
+
+@misc{ma2024unveiling,
+      title={Unveiling and Mitigating Generalized Biases of DNNs through the Intrinsic Dimensions of Perceptual Manifolds}, 
+      author={Yanbiao Ma and Licheng Jiao and Fang Liu and Lingling Li and Wenping Ma and Shuyuan Yang and Xu Liu and Puhua Chen},
+      year={2024},
+      eprint={2404.13859},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+According to Ma et al. [@ma2024unveiling], ...
+
 
 ```
 from skdim.id import TLE
