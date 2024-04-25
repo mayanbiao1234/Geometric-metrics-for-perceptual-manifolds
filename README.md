@@ -165,7 +165,7 @@ See the paper, [Unveiling and Mitigating Generalized Biases of DNNs through the 
 
 The citation format is: 
 
-"""
+```
 @misc{ma2024unveiling,
       title={Unveiling and Mitigating Generalized Biases of DNNs through the Intrinsic Dimensions of Perceptual Manifolds}, 
       author={Yanbiao Ma and Licheng Jiao and Fang Liu and Lingling Li and Wenping Ma and Shuyuan Yang and Xu Liu and Puhua Chen},
@@ -174,7 +174,7 @@ The citation format is:
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
-"""
+```
 
 ## References
 
