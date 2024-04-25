@@ -155,6 +155,9 @@ print("Perceptual manifold volume:", volume)
 ## Intrinsic Dimensions for perceptual manifolds in deep neural networks
 The intrinsic dimensionality of perceptual manifolds can predict the fairness of models. Specifically, the larger the intrinsic dimensionality of the perceptual manifold corresponding to a class, the poorer the model performs on that class. Below, we provide two estimation methods for intrinsic dimensionality.
 
+![image](https://github.com/mayanbiao1234/Geometric-metrics-for-perceptual-manifolds/assets/31196857/5d5d5e71-db81-40ea-899a-42215464c391)
+
+
 See the paper, [Unveiling and Mitigating Generalized Biases of DNNs through the Intrinsic Dimensions of Perceptual Manifolds](https://arxiv.org/abs/2404.13859)
 
 The citation format is: 
