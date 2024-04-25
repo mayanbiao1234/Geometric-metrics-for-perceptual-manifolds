@@ -166,12 +166,19 @@ See the paper, [Unveiling and Mitigating Generalized Biases of DNNs through the 
 The citation format is: 
 
 @misc{ma2024unveiling,
+
       title={Unveiling and Mitigating Generalized Biases of DNNs through the Intrinsic Dimensions of Perceptual Manifolds}, 
+      
       author={Yanbiao Ma and Licheng Jiao and Fang Liu and Lingling Li and Wenping Ma and Shuyuan Yang and Xu Liu and Puhua Chen},
+      
       year={2024},
+      
       eprint={2404.13859},
+      
       archivePrefix={arXiv},
+      
       primaryClass={cs.CV}
+      
 }
 
 ```
@@ -180,4 +187,14 @@ dim_estimator = TLE()
 intrinsic_dim = dim_estimator.fit(augmented_data).dimension_
 print("Intrinsic Dimensions:", intrinsic_dim)
 ```
+
+```
+import numpy as np
+# 5000 denotes the sample number and 10 denotes the dimension.
+data = np.ones(5000,10)
+intrinsic_dim = (np.trace(np.dot(data.T, data)))**2/np.trace(np.dot(data.T, data)**2)
+print("Intrinsic Dimensions:", intrinsic_dim)
+```
+
+
 
