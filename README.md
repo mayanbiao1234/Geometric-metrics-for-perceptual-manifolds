@@ -166,20 +166,14 @@ See the paper, [Unveiling and Mitigating Generalized Biases of DNNs through the 
 The citation format is: 
 
 @misc{ma2024unveiling,
-
       title={Unveiling and Mitigating Generalized Biases of DNNs through the Intrinsic Dimensions of Perceptual Manifolds}, 
-      
       author={Yanbiao Ma and Licheng Jiao and Fang Liu and Lingling Li and Wenping Ma and Shuyuan Yang and Xu Liu and Puhua Chen},
-      
       year={2024},
-      
       eprint={2404.13859},
-      
       archivePrefix={arXiv},
-      
       primaryClass={cs.CV}
-      
 }
+
 
 ```
 from skdim.id import TLE
