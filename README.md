@@ -3,9 +3,10 @@ Natural datasets exhibit inherent patterns that can be generalized under the man
 
 ![fig24](https://github.com/mayanbiao1234/Geometric-metrics-for-perceptual-manifolds-in-deep-neural-networks/assets/31196857/5b5d4ee3-cab2-4078-a7eb-09d52648121b)
 
-## Curvature metrics for perceptual manifolds in deep neural networks
+## Curvature metrics for perceptual manifolds in deep neural networks (CVPR 2023)
 The curvature metric of the perceptual manifold in deep neural networks allows analyzing the fairness of the model from a geometric point of view.
 For related conclusions on the curvature and model preferences of perceptual manifolds please refer to the paper, [Curvature-Balanced Feature Manifold Learning for Long-Tailed Classification](https://arxiv.org/abs/2303.12307)
+
 The citation format is: 
 
 ```
@@ -99,7 +100,7 @@ print(curvatures)
 ![图片1](https://github.com/mayanbiao1234/Geometric-metrics-for-perceptual-manifolds/assets/31196857/d5f4a764-1ac6-4e30-bf21-294319bcc7c5)
 
 
-## Volume metrics for perceptual manifolds in deep neural networks
+## Volume metrics for perceptual manifolds in deep neural networks (ICLR 2023)
 The volume of the perceptual manifold measures the richness of the distribution. See the paper, [Delving into Semantic Scale Imbalance](https://openreview.net/pdf?id=07tc5kKRIo), for how to use multiscale volumetric metrics for perceptual manifolds, and for more conclusions.
 
 The citation format is: 
