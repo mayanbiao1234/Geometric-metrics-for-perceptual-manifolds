@@ -174,18 +174,14 @@ The citation format is:
       primaryClass={cs.CV}
 }
 
-[//]: # (References)
+## References
 
-@misc{ma2024unveiling,
-      title={Unveiling and Mitigating Generalized Biases of DNNs through the Intrinsic Dimensions of Perceptual Manifolds}, 
-      author={Yanbiao Ma and Licheng Jiao and Fang Liu and Lingling Li and Wenping Ma and Shuyuan Yang and Xu Liu and Puhua Chen},
-      year={2024},
-      eprint={2404.13859},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+[@ma2024unveiling]: Ma, Y., Jiao, L., Liu, F., Li, L., Ma, W., Yang, S., Liu, X., & Chen, P. (2024). Unveiling and Mitigating Generalized Biases of DNNs through the Intrinsic Dimensions of Perceptual Manifolds. *arXiv preprint* arXiv:2404.13859.
 
-According to Ma et al. [@ma2024unveiling], ...
+## Usage
+
+According to Ma et al. ([@ma2024unveiling]), ...
+
 
 
 ```
