@@ -131,7 +131,7 @@ def calculate_volume(Z, d, Z_mean):
     diff = Z - Z_mean
 
     # Calculate (Z - Z_mean)(Z - Z_mean)^T
-    outer_product = np.outer(diff, diff)
+    outer_product = np.dot(diff.T, diff)
 
     # Calculate \frac{d}{m}(Z - Z_mean)(Z - Z_mean)^T
     scaled_outer_product = (d / Z.shape[0]) * outer_product
