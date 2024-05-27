@@ -194,4 +194,21 @@ print("Intrinsic Dimensions:", intrinsic_dim)
 
 We found that if two categories are highly similar, the geometric shapes of their corresponding embedding distributions are also highly similar. This discovery demonstrates for the first time that the geometric shape of the perceptual manifold can also serve as prior knowledge to help rare categories recover their true distribution. For specific details, please refer to the paper: [Geometric Prior Guided Feature Representation Learning for Long-Tailed Classification](https://link.springer.com/article/10.1007/s11263-024-01983-2)
 
+![figure3](https://github.com/mayanbiao1234/Geometric-metrics-for-perceptual-manifolds/assets/31196857/b195d4aa-48db-42ba-80f3-c5a76f7a20db)
+
+The citation format is: 
+
+```
+@article{ma2024geometric,
+  title={Geometric Prior Guided Feature Representation Learning for Long-Tailed Classification},
+  author={Ma, Yanbiao and Jiao, Licheng and Liu, Fang and Yang, Shuyuan and Liu, Xu and Chen, Puhua},
+  journal={International Journal of Computer Vision},
+  pages={1--18},
+  year={2024},
+  publisher={Springer}
+}
+```
+
+
+
 
