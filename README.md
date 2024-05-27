@@ -190,5 +190,7 @@ intrinsic_dim = (np.trace(np.dot(data.T, data)))**2/np.trace(np.dot(data.T, data
 print("Intrinsic Dimensions:", intrinsic_dim)
 ```
 
+## 4. Geometry of perceptual manifolds in deep neural networks (IJCV 2024)
+
 
 
