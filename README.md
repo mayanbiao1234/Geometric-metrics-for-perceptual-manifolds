@@ -190,7 +190,8 @@ intrinsic_dim = (np.trace(np.dot(data.T, data)))**2/np.trace(np.dot(data.T, data
 print("Intrinsic Dimensions:", intrinsic_dim)
 ```
 
-## 4. Geometry of perceptual manifolds in deep neural networks (IJCV 2024)
+## 4. The geometric shape of the perceptual manifold in deep neural networks (IJCV 2024)
 
+We found that if two categories are highly similar, the geometric shapes of their corresponding embedding distributions are also highly similar. This discovery demonstrates for the first time that the geometric shape of the perceptual manifold can also serve as prior knowledge to help rare categories recover their true distribution. For specific details, please refer to the paper: [Geometric Prior Guided Feature Representation Learning for Long-Tailed Classification](https://link.springer.com/article/10.1007/s11263-024-01983-2)
 
 
