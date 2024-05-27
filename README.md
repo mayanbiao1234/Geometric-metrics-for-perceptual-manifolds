@@ -1,4 +1,11 @@
 # Geometric-metrics-for-perceptual-manifolds-in-deep-neural-networks
+
+## Table of Contents
+- [Introduction](#Perceptual Manifold in Deep Neural Network)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 ## Perceptual Manifold in Deep Neural Network
 In the neural system, when neurons receive stimuli from the same category with different physical features, a perceptual manifold is formed. The formation of perceptual manifolds helps the neural system to perceive and process objects of the same category with different features distinctly. Recent studies have shown that the response of deep neural networks to images is similar to human vision and follows the manifold distribution law. Specifically, embeddings of natural images are distributed near a low-dimensional manifold embedded in a high-dimensional space.
 
