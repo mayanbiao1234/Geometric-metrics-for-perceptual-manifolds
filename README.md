@@ -3,7 +3,7 @@ Natural datasets exhibit inherent patterns that can be generalized under the man
 
 ![fig24](https://github.com/mayanbiao1234/Geometric-metrics-for-perceptual-manifolds-in-deep-neural-networks/assets/31196857/5b5d4ee3-cab2-4078-a7eb-09d52648121b)
 
-## Curvature metrics for perceptual manifolds in deep neural networks (CVPR 2023)
+## 1.Curvature metrics for perceptual manifolds in deep neural networks (CVPR 2023)
 The curvature metric of the perceptual manifold in deep neural networks allows analyzing the fairness of the model from a geometric point of view.
 For related conclusions on the curvature and model preferences of perceptual manifolds please refer to the paper, [Curvature-Balanced Feature Manifold Learning for Long-Tailed Classification](https://arxiv.org/abs/2303.12307)
 
@@ -100,7 +100,7 @@ print(curvatures)
 ![图片1](https://github.com/mayanbiao1234/Geometric-metrics-for-perceptual-manifolds/assets/31196857/d5f4a764-1ac6-4e30-bf21-294319bcc7c5)
 
 
-## Volume metrics for perceptual manifolds in deep neural networks (ICLR 2023)
+## 2.Volume metrics for perceptual manifolds in deep neural networks (ICLR 2023)
 The volume of the perceptual manifold measures the richness of the distribution. See the paper, [Delving into Semantic Scale Imbalance](https://openreview.net/pdf?id=07tc5kKRIo), for how to use multiscale volumetric metrics for perceptual manifolds, and for more conclusions.
 
 The citation format is: 
@@ -152,7 +152,7 @@ print("Perceptual manifold volume:", volume)
 ```
 
 
-## Intrinsic Dimensions for perceptual manifolds in deep neural networks
+## 3.Intrinsic Dimensions for perceptual manifolds in deep neural networks
 The intrinsic dimensionality of perceptual manifolds can predict the fairness of models. Specifically, the larger the intrinsic dimensionality of the perceptual manifold corresponding to a class, the poorer the model performs on that class. Below, we provide two estimation methods for intrinsic dimensionality.
 
 ![image](https://github.com/mayanbiao1234/Geometric-metrics-for-perceptual-manifolds/assets/31196857/5d5d5e71-db81-40ea-899a-42215464c391)
@@ -173,7 +173,7 @@ The citation format is:
 }
 ```
 
-### 1.Estimation of intrinsic dimensions using TLE
+### (1) Estimation of intrinsic dimensions using TLE
 
 ```
 from skdim.id import TLE
@@ -181,7 +181,7 @@ dim_estimator = TLE()
 intrinsic_dim = dim_estimator.fit(augmented_data).dimension_
 print("Intrinsic Dimensions:", intrinsic_dim)
 ```
-### 2.Covariance estimation methods for intrinsic dimensions
+### (2) Covariance estimation methods for intrinsic dimensions
 ```
 import numpy as np
 # 5000 denotes the sample number and 10 denotes the dimension.
