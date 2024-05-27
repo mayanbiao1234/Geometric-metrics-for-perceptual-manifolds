@@ -1,6 +1,5 @@
 # Geometric-metrics-for-perceptual-manifolds-in-deep-neural-networks
 
-[toc]
 ## Perceptual Manifold in Deep Neural Network
 In the neural system, when neurons receive stimuli from the same category with different physical features, a perceptual manifold is formed. The formation of perceptual manifolds helps the neural system to perceive and process objects of the same category with different features distinctly. Recent studies have shown that the response of deep neural networks to images is similar to human vision and follows the manifold distribution law. Specifically, embeddings of natural images are distributed near a low-dimensional manifold embedded in a high-dimensional space.
 
@@ -126,7 +125,7 @@ url={https://openreview.net/forum?id=07tc5kKRIo}
 
 ### The following is the code to calculate the volume of the perceptual manifold.
 
-```
+```python
 import numpy as np
 
 def calculate_volume(Z, d, Z_mean):
@@ -184,14 +183,14 @@ The citation format is:
 
 ### (1) Estimation of intrinsic dimensions using TLE
 
-```
+```python
 from skdim.id import TLE
 dim_estimator = TLE()
 intrinsic_dim = dim_estimator.fit(augmented_data).dimension_
 print("Intrinsic Dimensions:", intrinsic_dim)
 ```
 ### (2) Covariance estimation methods for intrinsic dimensions
-```
+```python
 import numpy as np
 # 5000 denotes the sample number and 10 denotes the dimension.
 data = np.ones(5000,10)
@@ -219,7 +218,7 @@ The citation format is:
 ```
 
 ### The following code calculates the similarity of the geometric shapes between perceptual manifolds.
-```
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 
