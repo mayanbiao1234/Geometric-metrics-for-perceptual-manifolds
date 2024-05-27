@@ -24,6 +24,7 @@ The citation format is:
 }
 ```
 
+### The following is the code to calculate the average Gaussian curvature of the perceptual manifold.
 
 ```python
 # -*- coding: utf-8 -*-
