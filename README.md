@@ -121,6 +121,7 @@ url={https://openreview.net/forum?id=07tc5kKRIo}
 }
 ```
 
+### The following is the code to calculate the volume of the perceptual manifold.
 
 ```
 import numpy as np
