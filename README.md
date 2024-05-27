@@ -221,6 +221,7 @@ The citation format is:
 import matplotlib.pyplot as plt
 import numpy as np
 
+#Assume the number of samples is 5000, and each sample is a (1, 10) vector.
 data_matrix1 = np.random.rand(5000, 10)
 data_matrix2 = np.random.rand(5000, 10)
 
