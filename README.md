@@ -216,7 +216,7 @@ The citation format is:
 }
 ```
 
-The following code calculates the similarity of the geometric shapes between perceptual manifolds.
+### The following code calculates the similarity of the geometric shapes between perceptual manifolds.
 ```
 import matplotlib.pyplot as plt
 import numpy as np
