@@ -173,7 +173,7 @@ The citation format is:
 }
 ```
 
-### Estimation of intrinsic dimensions using TLE
+### 1.Estimation of intrinsic dimensions using TLE
 
 ```
 from skdim.id import TLE
@@ -181,7 +181,7 @@ dim_estimator = TLE()
 intrinsic_dim = dim_estimator.fit(augmented_data).dimension_
 print("Intrinsic Dimensions:", intrinsic_dim)
 ```
-### Covariance estimation methods for intrinsic dimensions
+### 2.Covariance estimation methods for intrinsic dimensions
 ```
 import numpy as np
 # 5000 denotes the sample number and 10 denotes the dimension.
