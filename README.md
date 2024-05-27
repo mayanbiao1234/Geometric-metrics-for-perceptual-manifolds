@@ -214,10 +214,9 @@ The citation format is:
 }
 ```
 
+The following code calculates the similarity of the geometric shapes between perceptual manifolds.
 ```
-import pydicom
 import matplotlib.pyplot as plt
-import pydicom.data
 import numpy as np
 
 data_matrix1 = np.random.rand(5000, 10)
