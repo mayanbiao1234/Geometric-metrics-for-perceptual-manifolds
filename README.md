@@ -1,7 +1,7 @@
 # Geometric-metrics-for-perceptual-manifolds-in-deep-neural-networks
 
 ## Table of Contents
-- [Introduction](##Perceptual Manifold in Deep Neural Network)
+- [Perceptual Manifold in Deep Neural Network](#Perceptual Manifold in Deep Neural Network)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
