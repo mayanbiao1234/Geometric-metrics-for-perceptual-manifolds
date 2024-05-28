@@ -185,8 +185,10 @@ The citation format is:
 
 ```python
 from skdim.id import TLE
+# 5000 denotes the sample number and 10 denotes the dimension.
+data = np.ones(5000,10)
 dim_estimator = TLE()
-intrinsic_dim = dim_estimator.fit(augmented_data).dimension_
+intrinsic_dim = dim_estimator.fit(data).dimension_
 print("Intrinsic Dimensions:", intrinsic_dim)
 ```
 ### (2) Covariance estimation methods for intrinsic dimensions
