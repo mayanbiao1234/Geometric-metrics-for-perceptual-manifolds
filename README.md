@@ -1,5 +1,198 @@
 # Geometric-metrics-for-perceptual-manifolds-in-deep-neural-networks
 
+## Usage Guide for `perceptual_manifold_geometry` Package
+
+The `perceptual_manifold_geometry` package provides tools to analyze the geometry of data manifolds, including functions for calculating curvature, density, holes, intrinsic dimension, and nonconvexity.
+
+### Installation
+
+First, install the package using `pip`:
+
+```bash
+pip install perceptual_manifold_geometry
+```
+
+### Importing the Package
+
+Import the package in your Python script:
+
+```python
+import perceptual_manifold_geometry as pmg
+```
+
+### Available Functions
+
+The package includes the following functions:
+
+1. `curvatures(data, k=15, pca_components=8, curvature_type='PCA')`
+2. `calculate_volume(Z, d=1.0)`
+3. `estimate_holes_ripser(X, threshold=0.1, Persistence_diagrams=False)`
+4. `estimate_intrinsic_dimension(X, method='TLE')`
+5. `estimate_nonconvexity(X, n_projections=10, n_components=5, alpha=10000)`
+
+### Function Descriptions and Examples
+
+#### 1. `curvatures(data, k=15, pca_components=8, curvature_type='PCA')`
+
+The `curvatures` function in the `perceptual_manifold_geometry` package allows users to estimate different types of curvature metrics for high-dimensional data sets. It provides flexibility in calculating overall concavity, Gaussian curvature, or mean curvature based on user preferences.
+
+#### Importing the Function
+
+Import the `curvatures` function into your Python script:
+
+```python
+from perceptual_manifold_geometry import curvatures
+import numpy as np
+```
+
+#### Function Parameters
+
+The `curvatures` function accepts the following parameters:
+
+- `data`: numpy array, shape (n_samples, n_features), representing the input data points.
+- `k`: int, optional, default=15. Number of nearest neighbors for local neighborhood calculation.
+- `pca_components`: int, optional, default=8. Number of principal components to retain in PCA analysis.
+- `curvature_type`: str, optional, default='PCA'. Type of curvature to estimate. Options include `'PCA'` for overall concavity, `'gaussian'` for Gaussian curvature, and `'mean'` for mean curvature.
+
+#### Examples
+
+1. **Overall Concavity (PCA-based)**
+
+   Calculate the overall concavity of the data:
+
+   ```python
+   data = np.random.rand(100, 3)  # Example random data
+   overall_curvature = curvatures(data, k=15, pca_components=8, curvature_type='PCA')
+   print(f"Overall curvature: {overall_curvature}")
+   ```
+
+2. **Gaussian Curvature**
+
+   Estimate the Gaussian curvature of the data:
+
+   ```python
+   gaussian_curvature = curvatures(data, k=15, pca_components=8, curvature_type='gaussian')
+   print(f"Gaussian curvature: {gaussian_curvature}")
+   ```
+
+3. **Mean Curvature**
+
+   Compute the mean curvature of the data:
+
+   ```python
+   mean_curvature = curvatures(data, k=15, pca_components=8, curvature_type='mean')
+   print(f"Mean curvature: {mean_curvature}")
+   ```
+
+
+#### 2. `calculate_volume(Z, d=1.0)`
+
+Calculates the volume and density of the data manifold.
+
+**Parameters:**
+- `Z`: `numpy.ndarray` - Input data points.
+- `d`: `float` - Scaling factor (default: 1.0).
+
+**Returns:**
+- `tuple` - Volume and density of the data manifold.
+
+**Example:**
+
+```python
+import numpy as np
+import perceptual_manifold_geometry as pmg
+
+# Generate random data
+data = np.random.rand(100, 3)
+
+# Calculate volume and density
+volume, density = pmg.calculate_volume(data)
+print(f"Volume: {volume}, Density: {density}")
+```
+
+#### 3. `estimate_holes_ripser(X, threshold=0.1, Persistence_diagrams=False)`
+
+Estimates the number of holes in the data manifold using persistent homology.
+
+**Parameters:**
+- `X`: `numpy.ndarray` - Input data points.
+- `threshold`: `float` - Persistence threshold (default: 0.1).
+- `Persistence_diagrams`: `bool` - Whether to plot persistence diagrams (default: False).
+
+**Returns:**
+- `tuple` - Number of holes, total size of persistence, mean size of persistence, density of holes.
+
+**Example:**
+
+```python
+import numpy as np
+import perceptual_manifold_geometry as pmg
+
+# Generate random data
+data = np.random.rand(100, 3)
+
+# Estimate holes and plot persistence diagrams
+num_holes, total_size, mean_size, density_holes = pmg.estimate_holes_ripser(data, threshold=0.1, Persistence_diagrams=True)
+print(f"Number of Holes: {num_holes}, Total Size: {total_size}, Mean Size: {mean_size}, Density Holes: {density_holes}")
+```
+
+#### 4. `estimate_intrinsic_dimension(X, method='TLE')`
+
+Estimates the intrinsic dimension of the data manifold.
+
+**Parameters:**
+- `X`: `numpy.ndarray` - Input data points.
+- `method`: `str` - Method for estimating intrinsic dimension (`'TLE'` or `'Covariance'`).
+
+**Returns:**
+- `float` - Estimated intrinsic dimension.
+
+**Example:**
+
+```python
+import numpy as np
+import perceptual_manifold_geometry as pmg
+
+# Generate random data
+data = np.random.rand(100, 3)
+
+# Estimate intrinsic dimension
+intrinsic_dim = pmg.estimate_intrinsic_dimension(data, method='TLE')
+print(f"Intrinsic Dimension: {intrinsic_dim}")
+```
+
+#### 5. `estimate_nonconvexity(X, n_projections=10, n_components=5, alpha=10000)`
+
+Estimates the nonconvexity of the data manifold using random projections.
+
+**Parameters:**
+- `X`: `numpy.ndarray` - Input data points.
+- `n_projections`: `int` - Number of random projections to use (default: 10).
+- `n_components`: `int` - Number of dimensions to reduce to in each projection (default: 5).
+- `alpha`: `float` - Scaling factor for nonconvexity calculation (default: 10000).
+
+**Returns:**
+- `float` - Nonconvexity measure.
+
+**Example:**
+
+```python
+import numpy as np
+import perceptual_manifold_geometry as pmg
+
+# Generate random data
+data = np.random.rand(100, 3)
+
+# Estimate nonconvexity
+nonconvexity = pmg.estimate_nonconvexity(data)
+print(f"Nonconvexity: {nonconvexity}")
+```
+
+### Summary
+
+This guide provides an overview of how to install and use the functions from the `perceptual_manifold_geometry` package. Each function includes a brief description, parameters, return values, and an example of how to use it. By following these examples, you can leverage the package to analyze the geometry of your data manifolds.
+
+
 ## Perceptual Manifold in Deep Neural Network
 In the neural system, when neurons receive stimuli from the same category with different physical features, a perceptual manifold is formed. The formation of perceptual manifolds helps the neural system to perceive and process objects of the same category with different features distinctly. Recent studies have shown that the response of deep neural networks to images is similar to human vision and follows the manifold distribution law. Specifically, embeddings of natural images are distributed near a low-dimensional manifold embedded in a high-dimensional space.
 
